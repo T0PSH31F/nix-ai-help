@@ -10,13 +10,13 @@ Run directly without installation:
 
 ```bash
 # Ask a question
-nix run github:olafkfreund/nix-ai-help -- ask "how do I configure nginx?"
+nix run github:T0PSH31F/nix-ai-help -- ask "how do I configure nginx?"
 
 # Launch interactive interface
-nix run github:olafkfreund/nix-ai-help -- tui
+nix run github:T0PSH31F/nix-ai-help -- tui
 
 # Analyze your system
-nix run github:olafkfreund/nix-ai-help -- doctor
+nix run github:T0PSH31F/nix-ai-help -- doctor
 ```
 
 ## Key Features
