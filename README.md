@@ -51,16 +51,16 @@ nix run github:T0PSH31F/nix-ai-help -- doctor
 
 ```bash
 # Run latest version directly
-nix run github:olafkfreund/nix-ai-help
+nix run github:T0PSH31F/nix-ai-help
 
 # Or install permanently
-nix profile install github:olafkfreund/nix-ai-help
+nix profile install github:T0PSH31F/nix-ai-help
 ```
 
 ### From Source
 
 ```bash
-git clone https://github.com/olafkfreund/nix-ai-help.git
+git clone https://github.com/T0PSH31F/nix-ai-help.git
 cd nix-ai-help
 nix build
 ./result/bin/nixai --help
@@ -75,7 +75,7 @@ Add to your `configuration.nix` or `home.nix`:
 
 let
   nixai = pkgs.callPackage (builtins.fetchGit {
-    url = "https://github.com/olafkfreund/nix-ai-help.git";
+    url = "https://github.com/T0PSH31F/nix-ai-help.git";
     ref = "main";
   } + "/package.nix") {};
 in {
@@ -91,7 +91,7 @@ Add to your `flake.nix`:
 
 ```nix
 inputs = {
-  nix-ai.url = "github:olafkfreund/nix-ai-help";
+  nix-ai.url = "github:T0PSH31F/nix-ai-help";
 };
 ```
 
@@ -189,7 +189,7 @@ For detailed provider setup, run: `nixai provider config`
 
 ### Quick Start
 ```bash
-git clone https://github.com/olafkfreund/nix-ai-help.git
+git clone https://github.com/T0PSH31F/nix-ai-help.git
 cd nix-ai-help
 nix develop  # Enter development shell
 just build   # Build nixai
